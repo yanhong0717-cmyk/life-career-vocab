@@ -4,10 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Life & Career Vocabulary</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Life & Career Vocabulary</h1>
-  <p>我的單字網站</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>Life & Career Vocabulary</h1>
+      <p>英文單字練習網站</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="搜尋英文或中文..."
+      />
+    </section>
+
+    <section id="vocabList" class="vocab-list"></section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
