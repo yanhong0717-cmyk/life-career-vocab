@@ -1,3 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #d85b7b, #f29cb2);
+  color: white;
+  padding: 32px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.site-header p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.toolbar {
+  margin: 24px 0 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid #d8dce6;
+  border-radius: 12px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #d85b7b;
+  box-shadow: 0 0 0 3px rgba(216, 91, 123, 0.15);
+}
+
+.vocab-list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.vocab-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-left: 8px solid #d85b7b;
+}
+
+.vocab-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vocab-number {
+  display: inline-block;
+  min-width: 36px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #d85b7b;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.vocab-word {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c84d6f;
+  margin: 8px 0 6px;
+}
+
+.vocab-phonetic {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.vocab-meaning,
+.vocab-example,
+.vocab-translation {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.audio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.audio-buttons button {
+  border: none;
+  background: #d85b7b;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.audio-buttons button:hover {
+  opacity: 0.9;
+}
+
+.empty-message {
+  text-align: center;
+  color: #666;
+  padding: 30px 0;
+}
+
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .vocab-word {
+    font-size: 1.25rem;
+  }
 }
